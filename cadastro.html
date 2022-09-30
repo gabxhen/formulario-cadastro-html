@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <section class="full-cadastro">
+        <div class="container">
+            <form class="cadastro" method="post">
+                <label for="Nome">
+                    Nome*
+                    <input required type="text" name="Nome" placeholder="Digite o seu nome" id="nome" oninvalid=" this.setCustomValidity('Preencha o campo Nome')"
+                            oninput="this.setCustomValidity('')" />
+                </label>
+
+                <label for="Email">
+                    Email*
+                    <input required type="email" name="Email" placeholder="Digite o email" id="email" oninvalid=" this.setCustomValidity('Preencha o campo Email')"
+                            oninput="this.setCustomValidity('')"/>
+                </label>
+
+                <label for="Senha">
+                    Senha*
+                    <input required type="password" name="Senha" placeholder="Digite sua senha" id="senha" oninvalid=" this.setCustomValidity('Preencha o campo Senha')"
+                    oninput="this.setCustomValidity('')"/>
+                </label>
+
+                <label for="ConfirmeSenha">
+                    Confirme sua senha*
+                    <input required type="password" name="ConfirmeSenha" placeholder="Confirme sua senha" id="confirmeSenha" oninvalid=" this.setCustomValidity('Preencha o Confirme sua senha')"
+                                    oninput="this.setCustomValidity('')"/>
+                </label>
+                <button type="submit">Finalizar o cadastro</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
